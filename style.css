@@ -1,5 +1,5 @@
 body {
-    background: #d3d3d3;
+    background: #c9c9c9;
     text-align: center;
     font-family: sans-serif;
     margin-top: 50px;
@@ -12,6 +12,7 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
   }
+
   
   #game-box {
     width: 800px;
@@ -24,13 +25,14 @@ body {
   }
   
   #start-btn {
-    background: black;
+    background: #334155;
     color: white;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
     cursor: pointer;
   }
+
   
   .target {
     width: 30px;
@@ -39,5 +41,41 @@ body {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
+  }
+
+  .navbar {
+    background-color: #0062ff;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-btn {
+    background-color: #334155;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #facc15;
+    color: #1e293b;
+    transform: translateY(-2px);
+  }
+  footer {
+    background-color: #0062ff;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
   }
   
