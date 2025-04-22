@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark blue gradient background -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051c33"/>
+      <stop offset="100%" stop-color="#0a4281"/>
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)"/>
+  
+  <!-- Digital pattern elements -->
+  <g opacity="0.3">
+    <!-- Binary and hex code patterns -->
+    <text x="50" y="100" fill="#4f9bff" font-family="monospace" font-size="14">01011001 0x8F E2C B8 D0 59</text>
+    <text x="150" y="130" fill="#4f9bff" font-family="monospace" font-size="14">A8 F2 4C 10110110</text>
+    <text x="200" y="160" fill="#4f9bff" font-family="monospace" font-size="14">0xF4 D7 11001010 E2</text>
+    <text x="80" y="190" fill="#4f9bff" font-family="monospace" font-size="14">01000111 C4 0xB8 37 5926</text>
+    <text x="680" y="200" fill="#4f9bff" font-family="monospace" font-size="14">00110101 0xF7 D4 A2</text>
+    <text x="750" y="230" fill="#4f9bff" font-family="monospace" font-size="14">E7C A9 10010110</text>
+    <text x="600" y="260" fill="#4f9bff" font-family="monospace" font-size="14">0xC2 B4 01111000 F8</text>
+    <text x="700" y="290" fill="#4f9bff" font-family="monospace" font-size="14">01010101 D3 0xE6 42 7159</text>
+    <text x="600" y="370" fill="#4f9bff" font-family="monospace" font-size="14">F3D 9A 10110010 C7</text>
+    <text x="700" y="400" fill="#4f9bff" font-family="monospace" font-size="14">0x74 B2 01001100 A5</text>
+    <text x="200" y="430" fill="#4f9bff" font-family="monospace" font-size="14">01101010 F6 0xD1 83 4267</text>
+    <text x="100" y="460" fill="#4f9bff" font-family="monospace" font-size="14">B5E 3C 11100100</text>
+    <text x="250" y="490" fill="#4f9bff" font-family="monospace" font-size="14">0x93 A7 01000010 D8</text>
+  </g>
+  
+  <!-- Hexagonal pattern for tech/science feel -->
+  <g opacity="0.2">
+    <path d="M100,150 L150,175 L150,225 L100,250 L50,225 L50,175 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M150,175 L200,150 L250,175 L250,225 L200,250 L150,225 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M100,250 L150,225 L200,250 L200,300 L150,325 L100,300 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M250,175 L300,150 L350,175 L350,225 L300,250 L250,225 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M200,250 L250,225 L300,250 L300,300 L250,325 L200,300 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M700,350 L750,375 L750,425 L700,450 L650,425 L650,375 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M750,375 L800,350 L850,375 L850,425 L800,450 L750,425 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+    <path d="M700,450 L750,425 L800,450 L800,500 L750,525 L700,500 Z" stroke="#65b1ff" fill="none" stroke-width="1"/>
+  </g>
+  
+  <!-- Circuit-like lines -->
+  <g opacity="0.4">
+    <path d="M50,100 L150,100 L150,200 L300,200 L300,300 L450,300" stroke="#4f9bff" fill="none" stroke-width="1.5"/>
+    <path d="M500,150 L650,150 L650,250 L800,250 L800,350 L950,350" stroke="#4f9bff" fill="none" stroke-width="1.5"/>
+    <path d="M100,400 L250,400 L250,350 L400,350 L400,450 L550,450" stroke="#4f9bff" fill="none" stroke-width="1.5"/>
+    <path d="M600,100 L750,100 L750,200 L900,200" stroke="#4f9bff" fill="none" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Glowing brain outline in center - stylized and simplified for SVG -->
+  <g filter="url(#glow)">
+    <!-- Brain outlines - simplified for SVG -->
+    <path d="M500,200 C600,150 650,200 620,250 C680,260 700,320 650,350 C690,370 685,430 650,450 
+             C610,470 580,460 550,430 C520,460 490,470 450,450 C415,430 410,370 450,350 
+             C400,320 420,260 480,250 C450,200 500,150 500,200 Z" 
+          stroke="#ffffff" fill="none" stroke-width="4" opacity="0.9"/>
+    
+    <!-- Brain internal details -->
+    <path d="M500,250 C520,270 550,280 580,260" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    <path d="M500,250 C480,270 450,280 420,260" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    <path d="M500,300 C540,310 560,330 555,350" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    <path d="M500,300 C460,310 440,330 445,350" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    <path d="M500,350 C520,360 530,380 520,400" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    <path d="M500,350 C480,360 470,380 480,400" stroke="#ffffff" fill="none" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Neural network connection points -->
+    <circle cx="500" cy="250" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="550" cy="260" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="450" cy="260" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="500" cy="300" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="530" cy="330" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="470" cy="330" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="500" cy="350" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="520" cy="380" r="5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="480" cy="380" r="5" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Neural connections -->
+    <line x1="500" y1="250" x2="550" y2="260" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="250" x2="450" y2="260" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="250" x2="500" y2="300" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="300" x2="530" y2="330" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="300" x2="470" y2="330" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="350" x2="520" y2="380" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="500" y1="350" x2="480" y2="380" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  
+  <!-- Light particles -->
+  <g opacity="0.7">
+    <circle cx="200" cy="150" r="3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="350" cy="100" r="2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="700" cy="180" r="4" fill="#ffffff" opacity="0.6"/>
+    <circle cx="800" cy="300" r="3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="150" cy="400" r="2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="600" cy="450" r="3" fill="#ffffff" opacity="0.6"/>
+    <circle cx="850" cy="120" r="2" fill="#ffffff" opacity="0.7"/>
+    <circle cx="400" cy="250" r="3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="900" cy="380" r="2" fill="#ffffff" opacity="0.6"/>
+    <circle cx="250" cy="350" r="3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="750" cy="450" r="2" fill="#ffffff" opacity="0.5"/>
+    <circle cx="100" cy="200" r="3" fill="#ffffff" opacity="0.6"/>
+  </g>
+</svg>
