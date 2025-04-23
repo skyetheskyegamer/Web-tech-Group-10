@@ -1,4 +1,20 @@
 
+  
+    // Preventing unauthorized test button clicks
+    initializeGameLaunchers();
+  
+    // Logo fallback
+    const logos = document.querySelectorAll('.logo');
+    logos.forEach(logo => {
+      logo.onerror = () => handleLogoError(logo);
+    });
+  });
+  
+  function initializeGameLaunchers() {
+    const testButtons = document.querySelectorAll('.test-btn');
+  
+    testButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
         button.classList.add('btn-clicked');
         setTimeout(() => {
           button.classList.remove('btn-clicked');
