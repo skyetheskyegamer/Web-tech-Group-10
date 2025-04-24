@@ -1,0 +1,99 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main */
+main {
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #0062ff;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #334155;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #facc15;
+  color: #1e293b;
+  transform: translateY(-2px);
+}
+
+#game-screen {
+  background-color: #b8b8b8;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#game-message {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+#game-screen.waiting {
+  background-color: #ff0000;
+}
+
+#game-screen.ready {
+  background-color: #01f552;
+}
+
+footer {
+  background-color: #005cf0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
