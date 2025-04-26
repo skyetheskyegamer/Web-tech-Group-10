@@ -1,9 +1,9 @@
 
   
-    // Preventing unauthorized test button clicks
+
     initializeGameLaunchers();
   
-    // Logo fallback
+ 
     const logos = document.querySelectorAll('.logo');
     logos.forEach(logo => {
       logo.onerror = () => handleLogoError(logo);
