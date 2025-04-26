@@ -27,7 +27,7 @@ body {
   
   #game-box {
     width: 800px;
-    height: 450px;
+    height: 500px;
     background: white;
     border: 2px solid #0094ff;
     margin: 20px auto;
@@ -56,7 +56,7 @@ body {
 
   .navbar {
     background-color: #0062ff;
-    height: 200px;
+    height: 150px;
     padding: 1px 2px;
     color: white;
   }
@@ -85,7 +85,7 @@ body {
   }
   footer {
     background-color: #0062ff;
-    height: 200px;
+    height: 150px;
     color: white;
     text-align: center;
     padding-top: 1px;
