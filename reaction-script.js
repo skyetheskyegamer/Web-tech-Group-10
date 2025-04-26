@@ -31,7 +31,17 @@ gameScreen.addEventListener('click', () => {
 
     gameScreen.classList.remove('ready');
     isReady = false;
-  } 
+    
+    // Save name if null
+    if (!localStorage.getItem('userName')) {
+      const name = prompt("Enter your name for the leaderboard:") || "Anonymous";
+      localStorage.setItem('userName', name);
+    }
+
+    setTimeout(() => {
+      window.location.href = `leaderboard.html?test=reactionTime&score=${reaction}`;
+    }, 2000);
+  }
 
   else if (isWaiting) {
     clearTimeout(delayTimeout);
