@@ -23,6 +23,12 @@ function spawnTarget() {
     scoreDisplay.textContent = `Score: ${score}`;
     target.remove();
   };
+  gameBox.appendChild(target);
+
+  setTimeout(() => {
+    if (gameBox.contains(target)) target.remove();
+  }, 1500);
+}
 
   
 }
