@@ -1,0 +1,137 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8f6f8; 
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  background-color: #2c74b3; 
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #4ea5d9;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #61b4e4;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+#start-btn, #restart-btn {
+  margin: 1rem 0;
+  padding: 10px 20px;
+  background-color: #2c74b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-btn:hover, #restart-btn:hover {
+  background-color: #1e5a91;
+}
+
+
+.game-area {
+  margin-top: 20px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 20px;
+  background-color: #cce7ff; /* light blue background for board */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #2c74b3; /* darker blue for squares */
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.square.active {
+  background-color: #ffffff; /* flash white when active */
+}
+
+.square.wrong {
+  background-color: red;
+}
+
+
+.end-screen {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  padding: 2rem;
+}
+
+.end-screen h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.end-screen p {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  background-color: #2c74b3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.hidden {
+  display: none;
+}
