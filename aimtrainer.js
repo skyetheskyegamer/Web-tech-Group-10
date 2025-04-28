@@ -12,8 +12,8 @@ function spawnTarget() {
   const target = document.createElement('div');
   target.classList.add('target');
 
-  const x = Math.random() * (gameBox.clientWidth);
-  const y = Math.random() * (gameBox.clientHeight);
+  const x = Math.random() * (gameBox.clientWidth - 30);
+  const y = Math.random() * (gameBox.clientHeight - 30);
 
   target.style.left = `${x}px`;
   target.style.top = `${y}px`;
