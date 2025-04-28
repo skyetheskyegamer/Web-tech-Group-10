@@ -24,11 +24,7 @@ function spawnTarget() {
     target.remove();
   };
 
-  gameBox.appendChild(target);
-
-  setTimeout(() => {
-    if (gameBox.contains(target)) target.remove();
-  }, 1500);
+  
 }
 
 function startGame() {
