@@ -1,36 +1,96 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aim Trainer</title>
-  <link rel="stylesheet" href="aimtrainer-style.css">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="nav-btn">Home</a>
-      <a href="/sequence-memory" class="nav-btn">Sequence Memory</a>
-      <a href="reaction-time.html" class="nav-btn">Reaction Time</a>
-      <a href="leaderboard.html" class="nav-btn">Leaderboards</a>
-    </div>
-  </nav>
-  
-   <main>
-    <h2>Aim Trainer</h2>
-    <p>Press the start button to begin and hit as many of the targets in 1 minute. Press start to try again</p>
-    <div id="info">
-      <span id="score">Score: 0</span>
-      <span id="timer">Time: 60s</span>
-    </div>
-    <div id="game-box"></div>
-    <button id="start-btn">Start</button>
-  </main>
-  
-  <footer>
-    MindSharp
-  </footer>
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-  <script src="aimtrainer.js"></script>
-</body>
-</html>
+main {
+  flex: 1;
+}
+
+body {
+    background: #c9c9c9;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 100px;
+  }
+  
+  #info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  
+  #game-box {
+    width: 1000px;
+    height: 500px;
+    background: white;
+    border: 2px solid #0094ff;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #start-btn {
+    background: #334155;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  
+  .target {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background-color: #0062ff;
+    position:fixed;
+    left:0px;
+    top:0px;
+    height: 50px;
+    width: 100%;
+    padding-top: 1px;
+    color: white;
+  }
+  
+ 
+  
+  .nav-btn {
+    background-color: #334155;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #facc15;
+    color: #1e293b;
+    transform: translateY(-2px);
+  }
+  footer {
+    background-color: #0062ff;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 50px;
+    width: 100%; 
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+  }
+  
