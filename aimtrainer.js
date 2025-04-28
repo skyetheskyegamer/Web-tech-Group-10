@@ -7,7 +7,7 @@ const timerDisplay = document.getElementById('timer');
 let gameInterval;
 let countdown;
 let score = 0;
-let timeLeft = 60; // 60 seconds
+let timeLeft = 60;
 
 function spawnTarget() {
   const target = document.createElement('div');
@@ -51,13 +51,13 @@ function startGame() {
       clearInterval(gameInterval);
       clearInterval(countdown);
 
-      // Save name once if not already stored
+     
       if (!localStorage.getItem('userName')) {
         const name = prompt("Enter your name for the leaderboard:") || "Anonymous";
         localStorage.setItem('userName', name);
       }
 
-      // Redirect with score and test type
+     
       window.location.href = `leaderboard.html?test=aimTrainer&score=${score}`;
     }
   }, 1000);
