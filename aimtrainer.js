@@ -50,13 +50,12 @@ function startGame() {
       clearInterval(gameInterval);
       clearInterval(countdown);
 
-      // Save name once if not already stored
+      
       if (!localStorage.getItem('userName')) {
         const name = prompt("Enter your name for the leaderboard:") || "Anonymous";
         localStorage.setItem('userName', name);
       }
 
-      // Redirect with score and test type
       window.location.href = `leaderboard.html?test=aimTrainer&score=${score}`;
     }
   }, 1000);
