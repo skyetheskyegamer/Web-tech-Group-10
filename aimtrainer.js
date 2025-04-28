@@ -1,3 +1,4 @@
+
 const gameBox = document.getElementById('game-box');
 const startBtn = document.getElementById('start-btn');
 const scoreDisplay = document.getElementById('score');
@@ -23,14 +24,12 @@ function spawnTarget() {
     scoreDisplay.textContent = `Score: ${score}`;
     target.remove();
   };
+
   gameBox.appendChild(target);
 
   setTimeout(() => {
     if (gameBox.contains(target)) target.remove();
   }, 1500);
-}
-
-  
 }
 
 function startGame() {
@@ -52,12 +51,13 @@ function startGame() {
       clearInterval(gameInterval);
       clearInterval(countdown);
 
-      
+      // Save name once if not already stored
       if (!localStorage.getItem('userName')) {
         const name = prompt("Enter your name for the leaderboard:") || "Anonymous";
         localStorage.setItem('userName', name);
       }
 
+      // Redirect with score and test type
       window.location.href = `leaderboard.html?test=aimTrainer&score=${score}`;
     }
   }, 1000);
